@@ -1,5 +1,5 @@
 <template>
-    <li v-bind:class="{ 'is-do': item.is_do }" @click="DONE_TASK(item)">{{ item.title }}</li>
+    <li :class="{ 'is-do': item.is_do }" @click="DONE_TASK(item)">{{ item.title }}</li>
 </template>
 <script>
 import { mapActions } from 'vuex'

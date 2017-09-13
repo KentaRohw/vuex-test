@@ -19,8 +19,8 @@ export default new Vuex.Store({
                 is_do: false
             }
             commit({
-                type: types.DONE_TASK,
-                data: item
+                type: types.ADD_TASK,
+                data: newItem
             })
         },
         [types.DONE_TASK] ({ commit }, item) {
